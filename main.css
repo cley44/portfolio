@@ -76,6 +76,10 @@ a {
   font-weight: 400;
 }
 
+#badge {
+  width: 400px;
+}
+
 .formation-container-name {
   display: flex;
   width: 50%;
@@ -112,7 +116,7 @@ a {
 }
 .formation-description > p {
   margin: 0 100px;
-  font-size: 64px;
+  font-size: 45px;
   font-weight: 200;
 }
 .slide-right {
@@ -187,7 +191,7 @@ a {
 }
 .passion-description > p {
   margin: 5% 0;
-  font-size: 64px;
+  font-size: 45px;
   font-weight: 200;
 }
 .passion-description li {
@@ -250,6 +254,10 @@ a {
   z-index: auto;
 }
 
+.projet-description {
+  margin: 0 10%;
+}
+
 /* contact */
 .contact-container {
   height: 100vh;
@@ -271,14 +279,14 @@ a {
 .contact-information-container {
   display: flex;
   justify-content: center;
-  gap: 15%;
+  gap: 2%;
   width: 80%;
   height: 50%;
 }
 
 .contact-information {
   text-align: center;
-  width: 33%;
+  width: 25%;
 }
 
 .logo {
