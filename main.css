@@ -287,6 +287,10 @@ a {
 .contact-information {
   text-align: center;
   width: 25%;
+  height: fit-content;
+}
+.contact-information:hover {
+  cursor: pointer;
 }
 
 .logo {

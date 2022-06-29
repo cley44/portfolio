@@ -46,6 +46,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  //Contact
+  document.querySelector("#linkedin").addEventListener("click", () => {
+    window.open("https://www.linkedin.com/in/clement-chaban/");
+  });
+
+  document.querySelector("#phone").addEventListener("click", () => {
+    document.location.href = "tel:+33604138589";
+  });
+
+  document.querySelector("#mail").addEventListener("click", () => {
+    document.location.href = "mailto:chaban.clement@gmail.com?subject=&body=";
+  });
+
   //scroll
   // const sections = [...document.querySelectorAll(".section")];
   // let active = 0;
