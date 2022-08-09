@@ -21,10 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
     formation.addEventListener("mouseover", function transition() {
       if (index !== undefined) {
         desc[index].classList.remove("slide-right");
+        formations[index].classList.remove("formation-modifier");
       }
       formationName.classList.add("desactived-display");
       desc[formations.indexOf(formation)].classList.add("slide-right");
       index = formations.indexOf(formation);
+
+      //soulignement
+      formation.classList.add("formation-modifier");
     });
   });
 
@@ -39,10 +43,14 @@ document.addEventListener("DOMContentLoaded", function () {
     passion.addEventListener("mouseover", function transition() {
       if (indexP !== undefined) {
         descPassion[indexP].classList.remove("slide-left");
+        passions[indexP].classList.remove("passion-modifier");
       }
       passionName.classList.add("desactived-display");
       descPassion[passions.indexOf(passion)].classList.add("slide-left");
       indexP = passions.indexOf(passion);
+
+      //soulignment
+      passion.classList.add("passion-modifier");
     });
   });
 
