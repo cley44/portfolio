@@ -2,6 +2,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  background-color: #f4edde;
 }
 
 body {
@@ -27,24 +28,24 @@ a {
 }
 
 .photo_profil {
-  width: 700px;
-  height: 700px;
+  width: 30%;
+  min-width: 300px;
   border-radius: 50%;
   background-color: #f1e5cc;
 }
 
 .title {
   margin: 0;
-  font-size: 64px;
+  font-size: max(3vw, 30px);
 }
 #handball {
-  width: 300px;
+  width: 12vw;
 }
 #raspberry {
-  width: 300px;
+  width: 12vw;
 }
 #formation {
-  width: 300px;
+  width: 12vw;
 }
 /* FORMATION */
 .formation-container {
@@ -78,12 +79,8 @@ a {
   display: flex;
 }
 .formations-name > ul > li > p {
-  font-size: 64px;
+  font-size: max(3vw, 30px);
   font-weight: 400;
-}
-
-#badge {
-  width: 400px;
 }
 
 .formation-container-name {
@@ -98,7 +95,7 @@ a {
 
 .formation-container-name > h2 {
   margin: 0;
-  font-size: 64px;
+  font-size: max(3vw, 30px);
 }
 .desactived-display {
   opacity: 0;
@@ -122,8 +119,11 @@ a {
 }
 .formation-description > p {
   margin: 0 100px;
-  font-size: 45px;
+  font-size: max(3vw, 30px);
   font-weight: 200;
+}
+.formation-description > img {
+  width: 25vw;
 }
 .slide-right {
   position: unset;
@@ -164,7 +164,7 @@ a {
   display: flex;
 }
 .passions-name > ul > li > p {
-  font-size: 64px;
+  font-size: max(3vw, 30px);
   font-weight: 400;
 }
 
@@ -177,7 +177,7 @@ a {
 }
 .passion-container-name > h2 {
   margin: 0;
-  font-size: 64px;
+  font-size: max(3vw, 30px);
   font-weight: 600;
 }
 
@@ -197,13 +197,16 @@ a {
 }
 .passion-description > p {
   margin: 5% 0;
-  font-size: 45px;
+  font-size: max(3vw, 30px);
   font-weight: 200;
 }
 .passion-description li {
   margin: 5% 0;
-  font-size: 45px;
+  font-size: max(3vw, 30px);
   font-weight: 200;
+}
+.passion-description > img {
+  width: 12vw;
 }
 
 .slide-left {
@@ -221,7 +224,7 @@ a {
 .projet-title {
   margin: 0;
   padding: 4rem;
-  font-size: 64px;
+  font-size: max(3vw, 30px);
   font-weight: 600;
 }
 .slider {
@@ -274,7 +277,7 @@ a {
 }
 
 .contact-title {
-  font-size: 55px;
+  font-size: max(3vw, 30px);
   text-align: center;
   margin: 0;
   height: 30%;
@@ -370,4 +373,54 @@ a {
   top: 0;
   left: 0;
   display: flex;
+}
+
+@media screen and (max-width: 1300px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .formations-name::before {
+    display: none;
+  }
+  .passions-name::before {
+    display: none;
+  }
+  .formation-container {
+    flex-direction: column-reverse;
+  }
+  .formation-description {
+    width: auto;
+  }
+  .passion-description {
+    width: auto;
+  }
+  .passion-container {
+    flex-direction: column;
+  }
+  .projet-container {
+    height: auto;
+  }
+  .section {
+    align-items: center;
+  }
+  .slider {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .card {
+    margin-bottom: 0;
+    opacity: 1;
+    z-index: auto;
+  }
+  .contact-information-container {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
