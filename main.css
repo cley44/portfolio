@@ -302,6 +302,10 @@ a {
   cursor: pointer;
 }
 
+.contact-information > h3 {
+  white-space: nowrap;
+}
+
 .logo {
   width: 50px;
 }
