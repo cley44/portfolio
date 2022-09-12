@@ -125,6 +125,9 @@ a {
 .formation-description > img {
   width: 25vw;
 }
+.formation-description-petit {
+  font-size: max(0.5vw, 30px) !important;
+}
 .slide-right {
   position: unset;
   opacity: 1;
@@ -253,9 +256,6 @@ a {
 .card > img {
   padding-top: 2rem;
 }
-.card:hover {
-  transform: scale(105%);
-}
 
 .focused {
   margin-bottom: 0;
@@ -379,6 +379,12 @@ a {
   display: flex;
 }
 
+@media screen and (min-width: 1300px) {
+  .card:hover {
+    transform: scale(105%);
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .home-container {
     flex-direction: column;
@@ -426,5 +432,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .card {
+    width: 100%;
   }
 }
