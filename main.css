@@ -107,9 +107,8 @@ a {
   display: flex;
   width: 50%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
-  gap: 5%;
   position: fixed;
   text-align: center;
   left: 0;
@@ -117,16 +116,42 @@ a {
   transform: translateX(+100%);
   transition: transform 2s, opacity 2s;
 }
-.formation-description > p {
+.formation-description ul {
+  list-style-type: disclosure-closed;
+  text-align: justify;
+}
+.formation-description > div {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.formation-description > div:first-child {
+  border-bottom: 4px solid #f0ddb4;
+}
+.formation-description p {
   margin: 0 100px;
   font-size: max(3vw, 30px);
   font-weight: 200;
 }
-.formation-description > img {
-  width: 25vw;
+.formation-description img {
+  width: 19vw;
+}
+#logo_iut {
+  width: 13vw;
 }
 .formation-description-petit {
   font-size: max(0.5vw, 30px) !important;
+}
+.formation-description-moyen {
+  font-size: max(1.5vw, 30px) !important;
+  margin-top: 2%;
+}
+.formation-description-grand {
+  font-size: max(2.5vw, 30px) !important;
 }
 .slide-right {
   position: unset;
