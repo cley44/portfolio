@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   //window.scrollTo({ top: 0, behavior: "smooth" });
 
+  let clickable = "mouseover";
+
   //slider
   const cards = document.querySelectorAll(".card");
   cards.forEach((card) => {
@@ -15,10 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const formationName = document.querySelector(".formation-container-name");
   const desc = [...document.querySelectorAll(".formation-description")];
 
+  if ("ontouchstart" in formations[0]) {
+    clickable = "click";
+  }
+
   let index = undefined;
 
   formations.forEach((formation) => {
-    formation.addEventListener("mouseover", function transition() {
+    formation.addEventListener(clickable, function transition() {
       if (index !== undefined) {
         desc[index].classList.remove("slide-right");
         formations[index].classList.remove("formation-modifier");
@@ -40,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let indexP = undefined;
 
   passions.forEach((passion) => {
-    passion.addEventListener("mouseover", function transition() {
+    passion.addEventListener(clickable, function transition() {
       if (indexP !== undefined) {
         descPassion[indexP].classList.remove("slide-left");
         passions[indexP].classList.remove("passion-modifier");
